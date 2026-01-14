@@ -52,24 +52,25 @@ This project uses **MongoDB** as the database and implements **JWT authenticatio
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
+```bash
 ProjectManager/
-│
 ├── frontend/
-│ ├── src/
-│ ├── public/
-│ └── package.json
+│   ├── public/
+│   ├── src/
+│   └── package.json
 │
 ├── backend/
-│ ├── controllers/
-│ ├── routes/
-│ ├── models/
-│ ├── utils/
-│ ├── app.js
-│ └── package.json
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── utils/
+│   ├── app.js
+│   └── package.json
 │
 └── README.md
+
 
 
 ---
