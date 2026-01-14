@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "http://localhost:3000";
+const API = import.meta.env.VITE_API_BASE_URL;
 
 const login = async (credentials) => {
   const response = await axios.post(`${API}/login`, credentials, { withCredentials: true });
