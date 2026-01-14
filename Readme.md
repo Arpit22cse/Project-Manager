@@ -56,12 +56,12 @@ This project uses **MongoDB** as the database and implements **JWT authenticatio
 
 ```bash
 ProjectManager/
-├── frontend/
+├── Frontend/
 │   ├── public/
 │   ├── src/
 │   └── package.json
 │
-├── backend/
+├── Backend/
 │   ├── controllers/
 │   ├── routes/
 │   ├── models/
