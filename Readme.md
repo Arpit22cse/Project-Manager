@@ -88,7 +88,7 @@ ProjectManager/
 ### 1️⃣ Go to backend directory
 
 ```bash
-cd backend
+cd Backend
 
 2️⃣ Install dependencies
 npm install
@@ -124,7 +124,7 @@ http://localhost:3000
 
 🎨 Frontend Setup
 1️⃣ Go to frontend directory
-cd frontend
+cd Frontend
 
 2️⃣ Install dependencies
 npm install
