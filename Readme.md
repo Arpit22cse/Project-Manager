@@ -24,34 +24,6 @@ This project uses **MongoDB** as the database and implements **JWT authenticatio
 
 ---
 
-## 📁 Folder Structure
-
-# 🚀 Project Manager Application
-
-A full-stack web application built using **React** for the frontend and **Node.js + Express** for the backend.  
-This project uses **MongoDB** as the database and implements **JWT authentication using HTTP-only cookies**.
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- React
-- React Router DOM
-- Axios
-- Tailwind CSS
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JSON Web Token (JWT)
-- Cookie Parser
-- CORS
-- dotenv
-
----
-
 ## 📁 Project Structure
 
 ```bash
