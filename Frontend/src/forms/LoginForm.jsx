@@ -41,6 +41,19 @@ const LoginForm = () => {
       )}
 
       <div className="space-y-1">
+        <div className="mb-6 p-4 bg-blue-50 rounded-lg">
+            <h3 className="text-sm font-semibold text-blue-900 mb-2">
+              Demo Accounts:
+            </h3>
+            <div className="text-sm text-blue-800 space-y-1">
+              <p>
+                <strong>User:</strong> arpit@gmail.com / 12345678
+              </p>
+              <p>
+                <strong>Admin:</strong> bhanu@gmail.com / 12345678
+              </p>
+            </div>
+          </div>
         <label className="text-sm font-medium text-gray-700 ml-1">Email Address</label>
         <input
           type="email"

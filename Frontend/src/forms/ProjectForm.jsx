@@ -18,6 +18,7 @@ const ProjectForm = ({ initialData, isEdit, onSuccess }) => {
 
   // Sync state if initialData changes (when clicking "Edit" on a different project)
   useEffect(() => {
+    console.log("ProjectForm initialData:", initialData);
     if (isEdit && initialData) {
       setFormData({
         title: initialData.title || '',

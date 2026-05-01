@@ -6,6 +6,7 @@ import { Layout, CheckCircle, Clock, ArrowRight, Star } from 'lucide-react';
 import { getProjects, getTasksByProject, getUserTasks } from '../../api';
 import TaskCard from '../cards/TaskCard';
 import { useAuth } from '../context/authcontext';
+import { useNavigate } from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,6 +18,7 @@ const HomePage = () => {
   const [userTasks, setUserTasks] = useState([]);
   const { user, setUser } = useAuth();
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const loadHomeData = async () => {
@@ -81,6 +83,7 @@ const HomePage = () => {
                   <motion.button 
                     initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }}
                     className="bg-white text-indigo-600 px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-indigo-50 transition-colors"
+                    onClick={() => navigate("/dashboard")}
                   >
                     Open Project <ArrowRight size={18} />
                   </motion.button>

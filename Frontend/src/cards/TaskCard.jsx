@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Circle, Clock } from 'lucide-react';
+import { CheckCircle2, Circle, Clock, Loader2 } from 'lucide-react';
 
 const TaskCard = ({ task }) => {
   const priorityColors = {
@@ -16,9 +16,15 @@ const TaskCard = ({ task }) => {
       className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm flex items-start gap-4"
     >
       <div className="mt-1">
-        {task.status === 'completed' ? (
+        {task.status === "completed" && (
           <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-        ) : (
+        )}
+
+        {task.status === "in-progress" && (
+          <Loader2 className="w-5 h-5 text-blue-500 animate-spin" />
+        )}
+
+        {task.status === "pending" && (
           <Circle className="w-5 h-5 text-gray-300" />
         )}
       </div>

@@ -19,13 +19,14 @@ const Navbar = () => {
   const { user, setUser } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLogout = async() => {
     await logout();
     setUser(null);
     localStorage.removeItem('token');
     setIsOpen(false);
-    navigate('/');
+    navigate('/auth');
   };
 
   // Define which links show up based on auth status

@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard.jsx'
 import Profile from './pages/Profile.jsx'
 import HomePage from './pages/Home.jsx'
 import AuthProvider from './context/authcontext.jsx'
+import ProtectedRoute from './components/ProtectedRoute.jsx'
 import './index.css'
 
 
@@ -20,8 +21,16 @@ function App() {
       
         <Routes>
           <Route path="/auth" element={<Auth />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/profile" element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          } />
           <Route path="/" element={<HomePage />} />
         </Routes>
       
