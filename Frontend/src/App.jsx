@@ -31,7 +31,11 @@ function App() {
               <Profile />
             </ProtectedRoute>
           } />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={
+            <ProtectedRoute>
+              <HomePage />
+            </ProtectedRoute>
+          } />
         </Routes>
       
       <Footer/>
